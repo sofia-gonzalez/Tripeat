@@ -44,6 +44,26 @@ body{
     display: inline
 
 }
+#navigation-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#navigation-links a.active {
+    background: #6b6b6b;
+    border-radius: 5px;
+}
+
+
+#navigation-tabs a {
+	text-decoration: none;
+	padding: 5px;
+     }
+#navigation-tabs li {
+    display: inline
+
+}
 
 #carrousell {
     height: 300px;
@@ -66,23 +86,9 @@ text-align: center;
 color: white;
 }
 
-/*
 
-*/
-#navigation-links li {
 
-}
 
-#navigation-links a {
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-}
-
-#navigation-links a.active {
-    background: #6b6b6b;
-    border-radius: 5px;
-}
 
 .ilustration{
     height: 150px;
@@ -92,3 +98,36 @@ color: white;
 
 h2{text-align: center;
     }
+
+.user {height: 50px;
+    background: grey;
+    margin-bottom: 15px;
+    border-radius: 250px;
+	  }
+
+footer {height: 250px;
+    background: grey;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+	  }
+
+ul li {list-style: none }
+
+
+footer a:link, a:visited {
+    background-color: grey;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: black;
+}
+
+.menu-icon {
+   text-align: center
+}
