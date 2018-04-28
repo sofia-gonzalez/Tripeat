@@ -76,6 +76,12 @@ h1 {
 	color: white;
 	height:50px;
      }
+
+#navigation-tabs .active {
+	background: grey;
+	color: white;
+	height:50px;
+     }
 #navigation-tabs li {
     display: inline
 
@@ -114,6 +120,12 @@ color: white;
     margin-bottom: 15px;
 }
 
+.ilustration-big{
+    height: 300px;
+    background: grey;
+    margin-bottom: 15px;
+}
+
 h2{text-align: center;
     }
 
@@ -135,7 +147,6 @@ ul li {list-style: none }
 
 footer a:link, a:visited {
     background-color: grey;
-    color: white;
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
@@ -145,6 +156,24 @@ footer a:link, a:visited {
 a:hover, a:active {
     background-color: black;
 }
+footer a{color: white
+	}
 
 .backgrey{background: grey;
 }
+
+.margin-top-20 {
+	margin-top: 20px
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px
+}
+
+.center {text-align: center
+}
+
+a p{color: black
+}
+
+
