@@ -55,14 +55,31 @@ body{
     border-radius: 5px;
 }
 
+#navigation-tabs{
+	position: fixed;
+	bottom: 0px; 
+	background: white;
+	height:50px; 
+	border-top: 1px solid grey;
+}
 
 #navigation-tabs a {
 	text-decoration: none;
-	padding: 5px;
+	padding: 10px;
+	color: grey;
+     }
+#navigation-tabs a:hover {
+	background: grey;
+	color: white;
+	height:50px;
      }
 #navigation-tabs li {
     display: inline
 
+}
+.menu-icon {
+   text-align: center;
+   margin:0 auto;
 }
 
 #carrousell {
@@ -85,10 +102,6 @@ padding-bottom: : 20px;
 text-align: center;
 color: white;
 }
-
-
-
-
 
 .ilustration{
     height: 150px;
@@ -128,6 +141,4 @@ a:hover, a:active {
     background-color: black;
 }
 
-.menu-icon {
-   text-align: center
-}
+
