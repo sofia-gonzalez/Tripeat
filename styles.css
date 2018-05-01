@@ -176,4 +176,5 @@ footer a{color: white
 a p{color: black
 }
 
-
+.grey {background: grey;
+	color: white}
