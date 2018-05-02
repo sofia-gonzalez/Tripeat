@@ -10,8 +10,17 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Select CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    
+    <!-- Select JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,11 +43,8 @@
                             <span class="caret"></span>
                           </button>
                           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">CAT</a></li>
+                            <li><a href="#">EN</a></li>
                           </ul>
                     </div>
                         <button type="button" class="btn btn-default btn-sm col-xs-offset-1">
@@ -176,18 +182,145 @@
                     </h2>
                     <div class="row filtros">
                     <div class="col-xs-12">
-                            <div class="dropdown">
-                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                País o región
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
+                            <div id="dropdown" class="margin-bottom-20">
+                              <select class="selectpicker" data-live-search="true" title="Busca país o región">
+                              
+                                <optgroup label="A">
+                                <option><a href="#">Albania</a></option>
+                                <option><a href="#">Alemania</a></option>
+                                <option><a href="#">Andorra</a></option>
+                                <option><a href="#">Angola</a></option>
+                                <option><a href="#">Argelia</a></option>
+                                <option><a href="#">Argentina</a></option>
+                                <option><a href="#">Armenia</a></option>
+                                <option><a href="#">Australia</a></option>
+                                <option><a href="#">Austria</a></option>
+
+                                <optgroup label="B">
+                                <option><a href="#">Bahamas</a></option>
+                                <option><a href="#">Bélgica</a></option>
+                                <option><a href="#">Bolivia</a></option>
+                                <option><a href="#">Bosnia y Herzegovina</a></option>
+                                <option><a href="#">Brasil</a></option>
+                                <option><a href="#">Bulgaria</a></option>
+
+                                <optgroup label="C">
+                                <option><a href="#">Camboya</a></option>
+                                <option><a href="#">Canadá</a></option>
+                                <option><a href="#">Catar</a></option>
+                                <option><a href="#">Chile</a></option>
+                                <option><a href="#">China</a></option>
+                                <option><a href="#">Colombia</a></option>
+                                <option><a href="#">Corea del Norte</a></option>
+                                <option><a href="#">Corea del Sur</a></option>
+                                <option><a href="#">Costa de Marfil</a></option>
+                                <option><a href="#">Costa Rica</a></option>
+                                <option><a href="#"Croacia</a></option>
+                                <option><a href="#">Cuba</a></option>
+
+                                <optgroup label="D">
+                                <option><a href="#">Dinamarca</a></option>
+                                <option><a href="#">Dominicana</a></option>
+
+                                <optgroup label="E">
+                                <option><a href="#">Ecuador</a></option>
+                                <option><a href="#">Egipto</a></option>
+                                <option><a href="#">El Salvador</a></option>
+                                <option><a href="#">Emiratos Árabes Unidos</a></option>
+                                <option><a href="#">Eslovaquia</a></option>
+                                <option><a href="#">Eslovenia</a></option>
+                                <option><a href="#">España</a></option>
+                                <option><a href="#">Estados Unidos</a></option>
+                                <option><a href="#">Estonia</a></option>
+
+                                <optgroup label="F">
+                                <option><a href="#">Filipinas</a></option>
+                                <option><a href="#">Finlandia</a></option>
+                                <option><a href="#">Francia</a></option>
+
+                                <optgroup label="G">
+                                <option><a href="#">Georgia</a></option>
+                                <option><a href="#">Grecia</a></option>
+                                <option><a href="#">Guatemala</a></option>
+
+                                <optgroup label="H">
+                                <option><a href="#">Haití</a></option>
+                                <option><a href="#">Honduras</a></option>
+                                <option><a href="#">Hungría</a></option>
+
+                                <optgroup label="I">
+                                <option><a href="#">India</a></option>
+                                <option><a href="#">Indonesia</a></option>
+                                <option><a href="#">Irak</a></option>
+                                <option><a href="#">Irán</a></option>
+                                <option><a href="#">Irlanda</a></option>
+                                <option><a href="#">Islandia</a></option>
+                                <option><a href="#">Israel</a></option>
+                                <option><a href="#">Italia</a></option>
+
+                                <optgroup label="J">
+                                <option><a href="#">Jamaica</a></option>
+                                <option><a href="#">Japón</a></option>
+
+                                <optgroup label="K">
+                                <option><a href="#">Kenia</a></option>
+                                <option><a href="#">Kuwait</a></option>
+
+                                <optgroup label="L">
+                                <option><a href="#">Letonia</a></option>
+                                <option><a href="#">Lituania</a></option>
+                                <option><a href="#">Luxemburgo</a></option>
+
+                                <optgroup label="M">
+                                <option><a href="#">Madagascar</a></option>
+                                <option><a href="#">Malasia</a></option>
+                                <option><a href="#">Marruecos</a></option>
+                                <option><a href="#">México</a></option>
+                                <option><a href="#">Mónaco</a></option>
+
+                                <optgroup label="N">
+                                <option><a href="#">Nepal</a></option>
+                                <option><a href="#">Nicaragua</a></option>
+                                <option><a href="#">Nigeria</a></option>
+                                <option><a href="#">Noruega</a></option>
+                                <option><a href="#">Nueva Zelanda</a></option>
+
+                                <optgroup label="P">
+                                <option><a href="#">Países Bajos</a></option>
+                                <option><a href="#">Pakistán</a></option>
+                                <option><a href="#">Panamá</a></option>
+                                <option><a href="#">Paraguay</a></option>
+                                <option><a href="#">Perú</a></option>
+                                <option><a href="#">Polonia</a></option>
+                                <option><a href="#">Portugal</a></option>
+
+                                <optgroup label="R">                           
+                                <option><a href="#">República Checa</a></option>
+                                <option><a href="#">República Dominicana</a></option>
+                                <option><a href="#">República Sudafricana</a></option>
+                                <option><a href="#">Ruanda</a></option>
+                                <option><a href="#">Rumanía</a></option>
+                                <option><a href="#">Rusia</a></option>
+
+                                <optgroup label="S"> 
+                                <option><a href="#">Serbia</a></option>
+                                <option><a href="#">Singapur</a></option>
+                                <option><a href="#">Suecia</a></option>
+                                <option><a href="#">Suiza</a></option>
+
+                                <optgroup label="T"> 
+                                <option><a href="#">Tailandia</a></option>
+                                <option><a href="#">Turquía</a></option>
+
+                                <optgroup label="U"> 
+                                <option><a href="#">Ucrania</a></option>
+                                <option><a href="#">Uruguay</a></option>
+
+                                <optgroup label="V"> 
+                                <option><a href="#">Venezuela</a></option>
+                                <option><a href="#">Vietnam</a></option>
+
+                                </select>
                             </div>
                             
                         </div>
