@@ -181,3 +181,28 @@ a p{color: black
 
 .carousel img {max-height: 300px;
                 }
+
+.carousel-caption {background: white;
+                    width:100%;
+                    color: black;
+                    bottom:0px;
+                    left: 0px;
+                    right:0px;
+                    text-shadow: none;
+                }
+.carousel-control {max-width: 50px;
+                    border-radius: 100%;
+                    max-height: 50px;
+                    line-height: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+.carousel-control a {text-align: center;
+    background-color: white;
+    background-image: none;
+                }
+
+.carousel-control a span  {position: absolute;
+    top: 10px;
+    left: 20px;
+     }
