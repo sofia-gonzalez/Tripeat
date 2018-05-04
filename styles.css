@@ -178,3 +178,6 @@ a p{color: black
 
 .grey {background: grey;
 	color: white}
+
+.carousel img {max-height: 300px;
+                }
