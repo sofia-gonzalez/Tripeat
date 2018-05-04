@@ -8,6 +8,7 @@ html, body {
 }
 body{
     font-family: 'Lato', sans-serif;
+    color:#5a0001;
 }
 
 h1 {
@@ -26,17 +27,19 @@ h1 {
 }
 #header {
     color: white;
-    background: #6b6b6b;
+    background: #5a0001;
     padding: 15px 0 0 0;
 }
 
 #header h1 {
     margin-top: 0;
     margin-left: 15px;
+    color: white
 }
 
 #navigation-links {
-    background: black;
+    background: white;
+
 }
 
 #navigation-links ul {
@@ -49,13 +52,14 @@ h1 {
 }
 #navigation-links a {
     text-decoration: none;
-    color: white;
+    color: #FF3300;
     padding: 5px;
 }
 
 #navigation-links a.active {
-    background: #6b6b6b;
+    background: #FF3300;
     border-radius: 5px;
+    color: white
 }
 
 #navigation-tabs{
@@ -92,14 +96,17 @@ h1 {
 }
 
 #carrousell {
-    min-height: 300px;
-background: grey;  
+    min-height: 600px;
+background-image: url(img/slide.jpg);
+background-position:center;
+background-repeat:no-repeat;  
 text-align: center;
+width: 100%
 }
 
 
 #carrousell .buscar{
-    margin-top: 100px; 
+    margin-top: 50px; 
     margin-bottom: 0;
 }
 
@@ -111,42 +118,44 @@ text-align: center;
 .value{
 padding-bottom: : 20px;
 text-align: center;
-color: white;
+color: #5a0001;
 }
 
 .ilustration{
     height: 150px;
-    background: grey;
+    background: #FF8162;
     margin-bottom: 15px;
 }
 
 .ilustration-big{
     height: 300px;
-    background: grey;
+    background: #FF8162;
     margin-bottom: 15px;
 }
+
 
 h2{text-align: center;
     }
 
 .user {height: 50px;
-    background: grey;
+    background: #ff8162;
     margin-bottom: 15px;
     border-radius: 250px;
 	  }
 
 footer {min-height: 450px;
-    background: grey;
+    background: #5a0001;
     color: white;
     padding: 20px;
     margin-top: 20px;
 	  }
+footer h4 {color: white}
 
 ul li {list-style: none }
 
 
 footer a:link, a:visited {
-    background-color: grey;
+
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
@@ -154,12 +163,14 @@ footer a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: black;
+    background-color: #ff8162;
+    text-decoration: none
+
 }
 footer a{color: white
 	}
 
-.backgrey{background: grey;
+.backgrey{background: #5a0001;
 }
 
 .margin-top-20 {
@@ -170,13 +181,23 @@ footer a{color: white
 	margin-bottom: 20px
 }
 
+.margin-top-10{
+	margin-top: 10px
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px
+}
+
 .center {text-align: center
 }
+
+h4{color: #5a0001}
 
 a p{color: black
 }
 
-.grey {background: grey;
+.grey {background: #FF3300;
 	color: white}
 
 .carousel img {max-height: 300px;
