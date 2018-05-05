@@ -173,7 +173,7 @@ footer a:link, a:visited {
 }
 
 a:hover, a:active {
-    background-color: #ff8162;
+    background-color: #ffc5b7;
     text-decoration: none
 
 }
@@ -269,3 +269,18 @@ text-shadow: none}
 .product img {
 	max-height: 165px;
 }
+
+.btn-group button, .btn-default{
+	text-shadow: none;
+	border-color: #FF3300;
+	background: none;
+	color:  #FF3300
+}
+
+.btn-default:hover {color:  #FF3300;
+	background:#ffc5b7;
+	border-color: #FF3300;
+}
+
+.form-control{border-color: #FF3300;}
+.form-control:focus {border-color:#5a0001;}
