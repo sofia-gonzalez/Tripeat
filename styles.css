@@ -227,3 +227,9 @@ a p{color: black
     top: 10px;
     left: 20px;
      }
+
+.btn-primary {background: #FF3300;
+border: none;
+text-shadow: none}
+
+.btn-primary:hover {background: #5a0001}
