@@ -68,6 +68,10 @@ h1 {
     color: white
 }
 
+.logo img {
+    max-width: 150px
+}
+
 #navigation-tabs{
 	position: fixed;
 	bottom: 0px; 
@@ -115,7 +119,7 @@ width: 100%
 
 
 #carrousell .buscar{
-    margin-top: 50px; 
+    margin-top: 10px; 
     margin-bottom: 0;
 }
 
@@ -181,6 +185,15 @@ footer a{color: white
 	}
 
 .backgrey{background: #5a0001;
+}
+
+
+.margin-top-40 {
+	margin-top: 40px
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px
 }
 
 .margin-top-20 {
