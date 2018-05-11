@@ -6,6 +6,8 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+
 body{
     font-family: 'Lato', sans-serif;
     color:#5a0001;
@@ -78,6 +80,7 @@ h1 {
 	background: white;
 	height:50px; 
 	border-top: 1px solid #FF3300;
+    padding-bottom: 30px
 }
 
 #navigation-tabs a {
@@ -290,7 +293,7 @@ text-shadow: none}
 @media only screen and (max-width: 780px) {
 
    .productimage {
-                width: 100%;
+                width: 80%;
             }
 
 }
@@ -316,3 +319,5 @@ text-shadow: none}
 
 .input-group .form-control {z-index:0;}
 .input-group .form-control:focus {z-index:0;}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group, .input-group-btn>.btn:active, .input-group-btn>.btn:focus, .input-group-btn>.btn:hover {z-index:0;}
