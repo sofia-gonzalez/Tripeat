@@ -104,12 +104,12 @@
                     </div><!-- /input-group -->
 
 <div class="row product-detail">
-    <div class="col-xs-12 col-sm-6">
-      <div class="">
-        <img class="col-xs-12" src="http://www.cosasnuestras.cl/wp-content/uploads/2017/08/Galletitas-Chocolinas-250-gr.png" alt="...">
-      </div>
+    <div class="productimage">
+
+        <img id="product-image" src="http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif" alt="...">
+
     </div>
-    <div class="col-xs-12 col-sm-6">
+    <div class="productimage margin-bottom-40">
 
                     <h3>Nombre del producto</h3>
                     <h4>País de origen</h4>
@@ -264,6 +264,13 @@
             </div><!--CIERRACONTAINER menu tabs-->
                    
     </div> <!--CIERRACONTAINER FLUID-->
+
+    <script type="text/javascript">
+      $(function() {
+        var params = new URLSearchParams(window.location.search);
+        $("#product-image").attr('src', params.get('img'));
+      })
+    </script>
                    
         
 </body>

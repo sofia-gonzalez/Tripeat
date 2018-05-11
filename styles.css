@@ -281,6 +281,19 @@ text-shadow: none}
 .product-detail img {
 			max-height: 400px;
 			}
+.productimage {
+            width: 30%;
+            display:inline-block;
+            margin-left: 20px;
+            }
+
+@media only screen and (max-width: 780px) {
+
+   .productimage {
+                width: 100%;
+            }
+
+}
 
 .product img {
 	max-height: 165px;
