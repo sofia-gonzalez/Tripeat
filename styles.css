@@ -157,12 +157,15 @@ h2{text-align: center;
     border-radius: 250px;
 	  }
 
-footer {min-height: 450px;
+footer {
     background: #5a0001;
     color: white;
     padding: 20px;
     margin-top: 20px;
 	  }
+     
+footer img {width: 100% }
+
 footer h4 {color: white}
 
 ul li {list-style: none }
@@ -297,3 +300,6 @@ text-shadow: none}
 
 .form-control{border-color: #FF3300;}
 .form-control:focus {border-color:#5a0001;}
+
+.input-group .form-control {z-index:0;}
+.input-group .form-control:focus {z-index:0;}
