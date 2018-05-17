@@ -96,6 +96,17 @@ h1 {
 	border-radius: 0px
      }
 
+     }
+#navigation-tabs .active .badge {
+    display: inline;
+     } 
+.badge {
+    display: inline;
+    color:#FF3300;
+    background: white;
+    border: 1px solid #FF3300
+     } 
+
 #navigation-tabs .active {
 	background: #FF3300;
 	color: white;
