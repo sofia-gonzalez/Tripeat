@@ -64,7 +64,7 @@
 
             <!-- botones -->
             <div class="btn-group pull-right" role="group" aria-label="...">
-                    <div class="dropdown col-xs-2">
+                    <div class="dropdown col-xs-2 col-xs-offset-2">
 
                           <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             ES
@@ -75,14 +75,15 @@
                             <li><a href="#">EN</a></li>
                           </ul>
                     </div>
-                        <button type="button" class="btn btn-default btn-sm col-xs-offset-1">
-                              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                              INICIAR SESIÓN
-                        </button>
-
-                        <button type="button" class="btn btn-default btn-sm">
+                    <div class="col-xs-2 col-xs-offset-2">
+                     <button type="button" class="btn btn-default btn-sm col-xs-z">
                               <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                         </button>
+                    </div>
+                       <!--<button type="button" class="btn btn-default btn-sm col-xs-offset-1">
+                              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                              INICIAR SESIÓN
+                        </button>-->
                     
             </div> <!-- cierra botones -->
 
@@ -270,32 +271,25 @@
                    
     </div> <!--CIERRACONTAINER FLUID-->
 
-    <div id="navigation-tabs" class="hidden-lg hidden-md hidden-sm center">
+    <div id="navigation-tabs" class="hidden-lg hidden-md hidden-sm center col-xs-12">
                 <ul class="nav nav-tabs">
-                    <li class="col-xs-3 menu-icon">
+                    <li class="col-xs-4 menu-icon">
                         <a  href="index.html">
                             <span class="glyphicon glyphicon-home col-xs-12" aria-hidden="true"></span>
                            <div class="col-xs-12">Home</div>
                         </a>
                     </li>
-                    <li class="col-xs-3 menu-icon">
+                    <li class="col-xs-4 menu-icon">
                         <a href="product.html">
                            <span class="glyphicon glyphicon-glass col-xs-12" aria-hidden="true"></span>
                            <div class="col-xs-12">Productos</div>
                         </a>
                     </li>
-                    <li class="col-xs-3 menu-icon">
+                    <li class="col-xs-4 menu-icon">
                         <a href="cesta.html" class="active">
-                            <span class="col-xs-2 col-xs-offset-1 col-sm-3 col-sm-offset-3 glyphicon glyphicon-shopping-cart col-xs-12" aria-hidden="true"></span>
+                            <span class="col-xs-2 col-xs-offset-1 col-sm-4 col-sm-offset-4 glyphicon glyphicon-shopping-cart col-xs-12" aria-hidden="true"></span>
                             <span id="theCount" class="col-xs-3 badge">3</span>
                            <div class="col-xs-12">Cesta</div>
-                        </a>
-                    </li>
-                    <li class="col-xs-3 menu-icon">
-                        <a href="#">
-                           
-                           <span class="glyphicon glyphicon-user col-xs-12" aria-hidden="true"></span>
-                           <div class="col-xs-12">Perfil</div>
                         </a>
                     </li>
                 </ul>
