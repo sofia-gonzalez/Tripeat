@@ -19,3 +19,15 @@ var counter = 1;
             });
     
         });
+
+
+
+var textoqueseguardara;
+
+textoqueseguardara = input.value 
+
+// guardar datos domicilio
+localStorage.setItem("nombre", "dato");
+
+ // leer datos
+ var miDato = localStorage.getItem("nombre");
