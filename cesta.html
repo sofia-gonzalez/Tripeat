@@ -10,6 +10,9 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- CARRITO JS SIMPLE CART-->
+    <script type="text/javascript" src="simpleCart.js"></script>
+
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -49,7 +52,7 @@
                     </li>
                     <li>
                         <a href="cesta.html" class="active">
-                            Cesta <span class="badge">3</span>
+                            Cesta <span class="badge simpleCart_quantity"></span>
                         </a>
                     </li>
                 </ul>
@@ -93,7 +96,8 @@
         </div><!-- cierra menu -->
 
 
-                    
+       <div class="simpleCart_items"> </div>
+        
 
       <div class="row margin-top-20 cesta">
           <h2 class="margin-top-20 margin-bottom-20">Mi cesta</h2>
@@ -102,7 +106,9 @@
 
             <li class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
                 
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true" type="button" data-toggle="modal" data-target="#myModal"></span>
+                <span class="item-remove glyphicon glyphicon-remove pull-right" aria-hidden="true" type="button" data-toggle="modal" data-target="#myModal">
+                  <a href="javascript:;" class="simpleCart_remove"></a>
+                </span>
                 <div class="col-xs-4 col-sm-4">
                   <img src="http://www.cosasnuestras.cl/wp-content/uploads/2017/08/Galletitas-Chocolinas-250-gr.png" alt="...">
                 </div>
@@ -114,12 +120,12 @@
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
                             <span class="input-group-addon">-</span>
-                            <input id="costo1" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input value="1" id="costo1" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">+</span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                           </div> 
               </div>
@@ -133,18 +139,20 @@
                 </div>
               
               <div class="col-xs-8 col-sm-8">
-                        <h3 class="">Nombre del producto</h3>
+                        <h3 class="item-name">Nombre del producto</h3>
                         
                         <div class="row">
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
-                            <span class="input-group-addon">-</span>
-                            <input id="costo2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-addon">+</span>
+                            <span class="input-group-addon item-decrement">
+                              <a href="javascript:;" class="simpleCart_decrement">-</a></span>
+                            <input value="1" id="costo2" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-addon item-increment">
+                              <a href="javascript:;" class="simpleCart_increment">+</a></span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                           </div> 
               </div>
@@ -164,12 +172,12 @@
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
                             <span class="input-group-addon">-</span>
-                            <input id="costo3" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input value="1" id="costo3" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">+</span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                         </div> 
               </div>
@@ -196,7 +204,7 @@
             <li class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
                <h4 class="col-xs-4">Costo total</h4>
 
-               <div class="col-xs-2 pull-right" style="text-align: right;">
+               <div class="simpleCart_total col-xs-2 pull-right" style="text-align: right;">
                     <p>62 €</p>
                 </div>
 
@@ -221,7 +229,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">No, conservar</button>
-                <button type="button" class="btn btn-primary">Si, eliminar</button>
+                <button type="button" class="item-remove btn btn-primary"><a href="javascript:;" class="simpleCart_remove">Si, eliminar</a></button>
               </div>
             </div>
           </div>
@@ -281,7 +289,7 @@
                     <li class="col-xs-4 menu-icon">
                         <a href="cesta.html" class="active">
                             <span class="col-xs-2 col-xs-offset-1 col-sm-4 col-sm-offset-4 glyphicon glyphicon-shopping-cart col-xs-12" aria-hidden="true"></span>
-                            <span id="theCount" class="col-xs-3 badge">3</span>
+                            <span class="col-xs-3 badge simpleCart_quantity"></span>
                            <div class="col-xs-12">Cesta</div>
                         </a>
                     </li>

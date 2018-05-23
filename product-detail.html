@@ -10,6 +10,9 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- CARRITO JS SIMPLE CART-->
+    <script type="text/javascript" src="simpleCart.js"></script>
+
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -50,7 +53,7 @@
                     </li>
                     <li>
                         <a href="cesta.html">
-                            Cesta  <span class="badge">3</span>
+                            Cesta  <span class="badge simpleCart_quantity"></span>
                         </a>
                     </li>
                 </ul>
@@ -100,7 +103,7 @@
                       </span>
                     </div><!-- /input-group -->
 
-<div class="row product-detail">
+<div class="row product-detail simpleCart_shelfItem">
     <div class="productimage">
 
         <img id="product-image" src="http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif" alt="...">
@@ -108,11 +111,11 @@
     </div>
     <div class="productimage margin-bottom-40">
 
-                    <h3>Nombre del producto</h3>
+                    <h3 class="item_name">Nombre del producto</h3>
                     <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <p class="item_price">10 €</p>
                     <p>
-                        <a   id="addMe" href="#" class="btn btn-primary backgrey" role="button">
+                        <a   href="javascript:;" class="item_add btn btn-primary backgrey" role="button">
                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                     Añadir
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver sustituto local</a></p>
@@ -247,7 +250,7 @@
                     <li class="col-xs-4 menu-icon">
                         <a href="cesta.html">
                             <span class="col-xs-2 col-xs-offset-1 col-sm-4 col-sm-offset-4 glyphicon glyphicon-shopping-cart col-xs-12" aria-hidden="true"></span>
-                            <span id="theCount" class="col-xs-3 badge">3</span>
+                            <span class="col-xs-3 badge simpleCart_quantity"></span>
                            <div class="col-xs-12">Cesta</div>
                         </a>
                     </li>

@@ -10,6 +10,9 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- CARRITO JS SIMPLE CART-->
+    <script type="text/javascript" src="simpleCart.js"></script>
+
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -49,7 +52,7 @@
                     </li>
                     <li>
                         <a href="cesta.html" class="active">
-                            Cesta <span class="badge">3</span>
+                            Cesta <span class="badge simpleCart_quantity"></span>
                         </a>
                     </li>
                 </ul>
@@ -114,12 +117,12 @@
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
                             <span class="input-group-addon">-</span>
-                            <input id="costo1" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input value="1" id="costo1" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">+</span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                           </div> 
               </div>
@@ -139,12 +142,12 @@
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
                             <span class="input-group-addon">-</span>
-                            <input id="costo2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input value="1" id="costo2" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">+</span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                           </div> 
               </div>
@@ -164,17 +167,16 @@
                           <h4 class="col-xs-7">País de origen</h4>
                           <div class="input-group col-xs-3 pull-right">
                             <span class="input-group-addon">-</span>
-                            <input id="costo3" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input value="1" id="costo3" type="text" class="Item.quantity form-control" aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-addon">+</span>
                           </div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-8 margin-top-10">10 € (Botella de litro)</p>
+                            <p class="item_price col-xs-8 margin-top-10">10 €</p>
                             <p class="col-xs-4 margin-top-10" style="text-align: right;">20 €</p>
                         </div> 
               </div>
             </li>
-
             <li class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
 
                   <h4 class="col-xs-4">Costos de envío</h4>
@@ -189,14 +191,14 @@
 
                   </div><!-- /input-group -->
 
-                  <p class="col-xs-2 pull-right margin-top-10" style="text-align: right;">2 €</p>
+                  <p class="simpleCart_tax col-xs-2 pull-right margin-top-10" style="text-align: right;">2 €</p>
 
             </li>
 
             <li class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
                <h4 class="col-xs-4">Costo total</h4>
 
-               <div class="col-xs-2 pull-right margin-top-10" style="text-align: right;">
+               <div class="simpleCart_grandTotal col-xs-2 pull-right" style="text-align: right;">
                     <p>62 €</p>
                 </div>
 
@@ -281,7 +283,7 @@
                     <li class="col-xs-4 menu-icon">
                         <a href="cesta.html" class="active">
                             <span class="col-xs-2 col-xs-offset-1 col-sm-4 col-sm-offset-4 glyphicon glyphicon-shopping-cart col-xs-12" aria-hidden="true"></span>
-                            <span id="theCount" class="col-xs-3 badge">3</span>
+                            <span class="col-xs-3 badge simpleCart_quantity"></span>
                            <div class="col-xs-12">Cesta</div>
                         </a>
                     </li>
