@@ -111,7 +111,7 @@
     </div>
     <div class="productimage margin-bottom-40">
 
-                    <h3 class="item_name">Don Satur Biscochos</h3>
+                    <h3 id="product-name" class="item_name">Don Satur Biscochos</h3>
                     <h4>País de origen</h4>
                     <p class="item_price">10 €</p>
                     <p>
@@ -263,6 +263,10 @@
       $(function() {
         var params = new URLSearchParams(window.location.search);
         $("#product-image").attr('src', params.get('img'));
+      })
+      $(function() {
+        var params = new URLSearchParams(window.location.search);
+        $("#product-name").attr('h3', params.get('text'));
       })
     </script>
                    

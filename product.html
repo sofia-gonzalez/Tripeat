@@ -108,6 +108,7 @@
 <div class="row "> <!-- GALERIA fila 1 -->
 
       <a href="product-detail.html?img=http://www.cosasnuestras.cl/wp-content/uploads/2017/08/Galletitas-Chocolinas-250-gr.png">
+        
           <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
@@ -117,13 +118,15 @@
                     <h4>País de origen</h4>
                     <p class="item_price">4 €</p>
                     <p>
-                        <a  href="javascript:;" class="item_add btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
+                         
+                    
                         </a> <a href="product-detail.html?img=http://www.cosasnuestras.cl/wp-content/uploads/2017/08/Galletitas-Chocolinas-250-gr.png" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
+
       </a>
 
       <a href="product-detail.html?img=http://www.totis.com.mx/wp-content/uploads/donitas-cat-mobile.png">
@@ -387,6 +390,13 @@
                    
     </div> <!--CIERRACONTAINER FLUID-->
                    
-        
+   <script type="text/javascript">
+     
+     $(document).ready(function(e) {
+        $('#btnAdded').click(function(){
+        $(this).val("Añadido");
+      });
+    });
+   </script>     
 </body>
 </html>

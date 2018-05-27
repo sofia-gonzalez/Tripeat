@@ -316,6 +316,13 @@ text-shadow: none}
 .product img {
 	max-height: 165px;
 }
+.added{
+   content: "Añadir"; 
+}
+.added:visited{
+   content: "Añadido"; 
+   background: blue;
+}
 
 .btn-group button, .btn-default{
 	text-shadow: none;
@@ -336,3 +343,5 @@ text-shadow: none}
 .input-group .form-control:focus {z-index:0;}
 
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group, .input-group-btn>.btn:active, .input-group-btn>.btn:focus, .input-group-btn>.btn:hover {z-index:0;}
+
+
