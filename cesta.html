@@ -305,6 +305,45 @@
 
       <!-- Java Script-->
     <script type="script.js"></script>
+
+    <script>
+      simpleCart({
+        checkout: {
+          type: "PayPal",
+          email: "you@yours.com"
+        },
+        tax:    0.075,
+        currency:   "EUR"
+        cartColumns: [
+            { attr: "name", label: "Name"},
+            { view: "currency", attr: "price", label: "Price"},
+            { view: "decrement", label: false},
+            { attr: "quantity", label: "Qty"},
+            { view: "increment", label: false},
+            { view: "currency", attr: "total", label: "SubTotal" },
+            { view: "remove", text: "Remove", label: false}
+        ],
+        cartStyle: "table", 
+      });
+    </script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+          $("#domicilio").keyup(function () {
+              var value = $(this).val();
+              $("#texto-guardado").val(value);
+          });
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var params = new URLSearchParams(window.location.search);
+        $("#domicilio").attr('p', params.get('text'));
+      })
+    </script>
         
 </body>
 </html>
