@@ -172,10 +172,10 @@ h2{text-align: center;
 	  }
 
 footer {
-    background: #5a0001;
+    background: #FF3300;
     color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
 	  }
      
 footer img {width: 100% }
@@ -201,7 +201,7 @@ a:hover, a:active {
 footer a{color: white
 	}
 
-.backgrey{background: #5a0001;
+.backgrey{background: #FF3300;
 }
 
 
