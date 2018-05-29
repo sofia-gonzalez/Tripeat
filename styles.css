@@ -344,4 +344,84 @@ text-shadow: none}
 
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group, .input-group-btn>.btn:active, .input-group-btn>.btn:focus, .input-group-btn>.btn:hover {z-index:0;}
 
+/* 
+    Estilo cesta
+*/
 
+.headerRow{
+            display: none;
+            }
+
+.simpleCart_items {
+    
+
+}
+
+.itemRow{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.item-increment, .item-decrement{
+                margin: 20px;
+                padding: 6px 12px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1;
+                color: #555;
+                text-align: center;
+                background-color: #eee;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                }
+.item-quantity{border:1px solid #FF3300;
+                text-align: center;
+                width: 50px
+                }
+
+.item-name {font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            width: 100%;
+}
+
+@media only screen and (min-width: 780px) {
+
+   .simpleCart_items { 
+                    width: 50%;
+                    margin-left:25%;
+                            }
+
+            }
+
+.simpleCart_items td{ min-width: 20px;
+                    height: 60px;
+                    padding: 20px
+}
+
+.item-total {
+            font-weight: 600;
+}
+
+.item-remove{
+            font-weight: 800;
+            background-color: #eee
+}
+
+/* 
+    ocultar remove y poner cruz
+
+.item-remove td{
+        background-image: url("img/x.png")
+            }
+
+
+    ocultar remove y poner cruz
+.item-remove a{
+        content: "X";
+        visibility:hidden;
+            }
+*/
