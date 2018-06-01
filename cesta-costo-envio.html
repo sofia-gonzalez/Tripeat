@@ -303,10 +303,8 @@
       <script type="text/javascript">
 
       $(document).ready(function () {
-          $("#domicilio").keyup(function () {
-              var value = $(this).val();
-              $("#texto-guardado").val(value);
-          });
+          var domicilio =localStorage.getItem('domicilio');
+          $("#domicilio").html(domicilio);
       });
 
     </script>

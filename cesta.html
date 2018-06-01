@@ -116,8 +116,8 @@
                           <div class="col-xs-8" style="margin:0; padding:0">
                             <input id="domicilio" type="text" class="form-control col-xs-8" placeholder="Escribe tu dirtección">
                           </div>
-                          <a class="input-group-btn col-xs-3" href="cesta-costo-envio.html" style=" padding-left:0">
-                            <button class="btn btn-default" type="button">Calcular</button>
+                          <a class="input-group-btn col-xs-3" href="javascript:void(0)" style=" padding-left:0">
+                            <button id="domicilio-button"  class="btn btn-default" type="button">Calcular</button>
                           </a>
 
                   </div><!-- /input-group -->
@@ -254,19 +254,24 @@
     <script type="text/javascript">
 
       $(document).ready(function () {
-          $("#domicilio").keyup(function () {
-              var value = $(this).val();
-              $("#texto-guardado").val(value);
-          });
+          
+
+      $('#domicilio-button').click(function(){
+          var domicilio = $('#domicilio').val();
+          localStorage.setItem('domicilio', domicilio);
+          window.location.href = 'cesta-costo-envio.html'
+      });
+          
+
       });
 
     </script>
 
     <script type="text/javascript">
-      $(function() {
+      /*$(function() {
         var params = new URLSearchParams(window.location.search);
         $("#domicilio").attr('p', params.get('text'));
-      })
+      })*/
     </script>
         
 </body>
