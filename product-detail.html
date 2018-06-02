@@ -61,22 +61,13 @@
 
             <!-- botones -->
             <div class="btn-group pull-right" role="group" aria-label="...">
-                    <div class="dropdown col-xs-2 col-xs-offset-2">
-
-                          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            ES
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">CAT</a></li>
-                            <li><a href="#">EN</a></li>
-                          </ul>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-2">
-                     <button type="button" class="btn btn-default btn-sm col-xs-z">
-                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    
+                    <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
+                     <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
+                              <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"></span>
+                              <span class="badge simpleCart_quantity" style="background: "></span>
                         </button>
-                    </div>
+                    </a>
                        <!--<button type="button" class="btn btn-default btn-sm col-xs-offset-1">
                               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                               INICIAR SESIÓN
@@ -116,9 +107,8 @@
                     <h4>País de origen</h4>
                     <p class="item_price">10 €</p>
                     <p>
-                        <a   href="javascript:;" class="item_add btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver sustituto local</a></p>
                   </div>
 
@@ -127,75 +117,71 @@
 
 
 
-<div class="row product"> <!-- GALERIA -->
+<div class="row product "> <!-- GALERIA -->
     <h3 class="col-xs-12">Te recomendamos acompañarlo con:</h3>
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://www.mate-tee.de/images/product_images/popup_images/1855_0.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Dulce de leche Chimbote</h3>
+                    <h4>España</h4>
+                    <p class="item_price">2 €</p>
                     <p>
-                        <a id="addMe" href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>        
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgOMtTzEo03sZU3IyBy9dfdCUzcjRLF2XlTpLyshWSfJC0MTDhJg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Alfajores Habanna</h3>
+                    <h4>Argentina</h4>
+                    <p class="item_price">10 €</p>
                     <p>
-                        <a href="#" class="btn btn-primary backgrey" role="button">
-                         <span id="addMe" class="glyphicon glyphicon-shopping-cart" aria-hidden="true" onclick=""></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSummifBo4zaPtj7UWsu9lppAwsyZq6CjTO7-zXF1OAxtAyFGUI" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Yerba mate Rosamonte</h3>
+                    <h4>Argentina</h4>
+                    <p class="item_price">5 €</p>
                     <p>
-                        <a id="addMe" href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
-                        </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
+                        </a><a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="http://www.pampadrugstore.net/350-large_default/tapas-de-empanadas-la-saltena-horno.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Tapa empanada La Salteña</h3>
+                    <h4>Argentina</h4>
+                    <p class="item_price">3.5 €</p>
                     <p>
-                        <a id="addMe" href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
@@ -270,6 +256,15 @@
         $("#product-name").attr('h3', params.get('text'));
       })
     </script>
+
+    <script type="text/javascript">
+     
+     $(document).ready(function(e) {
+        $('.added').click(function(){
+        $(this).val("Añadido");
+      });
+    });
+   </script> 
                    
         
 </body>

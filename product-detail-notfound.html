@@ -63,22 +63,13 @@
 
             <!-- botones -->
             <div class="btn-group pull-right" role="group" aria-label="...">
-                    <div class="dropdown col-xs-2 col-xs-offset-2">
-
-                          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            ES
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">CAT</a></li>
-                            <li><a href="#">EN</a></li>
-                          </ul>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-2">
-                     <button type="button" class="btn btn-default btn-sm col-xs-z">
-                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    
+                    <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
+                     <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
+                              <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"></span>
+                              <span class="badge simpleCart_quantity" style="background: "></span>
                         </button>
-                    </div>
+                    </a>
                        <!--<button type="button" class="btn btn-default btn-sm col-xs-offset-1">
                               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                               INICIAR SESIÓN
@@ -105,7 +96,7 @@
                       </span>
                     </div><!-- /input-group -->
 
-<div class="row center">
+<div class="row center margin-bottom-20">
     <img src="img/producto-no-encontrado.png">
     <p>Producto no encontrado</p>
 </div>
@@ -113,74 +104,70 @@
 
 
 <div class="row product"> <!-- GALERIA -->
-    <h2>Te recomendamos sustituirlo por:</h2>
-      <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+    <h2 class="margin-bottom-20">Te recomendamos sustituirlo por:</h2>
+      <a href="product-detail.html margin-top-20">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://plazavea.vteximg.com.br/arquivos/ids/182876-1000-1000/1285377002.jpg?v=636145887622170000" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Galletas Tentación</h3>
+                    <h4>España</h4>
+                    <p class="item_price">2 €</p>
                     <p>
-                        <a href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>        
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://ugc.kn3.net/i/origin/http://hiperbahia.com/3261-large_default/lincoln-chocolate-60x153gr-paquete.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Galletas chocolate Lincoln</h3>
+                    <h4>Argentina</h4>
+                    <p class="item_price">4 €</p>
                     <p>
-                        <a href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201705/05/00120608201883____1__600x600.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Galletas María Oro</h3>
+                    <h4>España</h4>
+                    <p class="item_price">1.25 €</p>
                     <p>
-                        <a href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
           </div>
       </a>
       <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
                   <div class=""><img src="http://www.farmacity.es/4000-tonytheme_cloudzoom_big/siken-diet-galletas-de-chocolate.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3>Nombre del producto</h3>
-                    <h4>País de origen</h4>
-                    <p>10 € (Botella de litro)</p>
+                    <h3 class="item_name">Siken Diet Chocolate</h3>
+                    <h4>Argentina</h4>
+                    <p class="item_price">3 €</p>
                     <p>
-                        <a href="#" class="btn btn-primary backgrey" role="button">
-                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    Añadir
+                        <a  href="javascript:;">
+                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
                         </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
                   </div>
                 </div>
@@ -244,7 +231,15 @@
             </div><!--CIERRACONTAINER menu tabs-->
                    
     </div> <!--CIERRACONTAINER FLUID-->
-                   
+   
+   <script type="text/javascript">
+     
+     $(document).ready(function(e) {
+        $('.added').click(function(){
+        $(this).val("Añadido");
+      });
+    });
+   </script>                 
         
 </body>
 </html>

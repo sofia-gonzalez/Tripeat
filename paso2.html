@@ -67,22 +67,13 @@
 
             <!-- botones -->
             <div class="btn-group pull-right" role="group" aria-label="...">
-                    <div class="dropdown col-xs-2 col-xs-offset-2">
-
-                          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            ES
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">CAT</a></li>
-                            <li><a href="#">EN</a></li>
-                          </ul>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-2">
-                     <button type="button" class="btn btn-default btn-sm col-xs-z">
-                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    
+                    <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
+                     <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
+                              <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"></span>
+                              <span class="badge simpleCart_quantity" style="background: "></span>
                         </button>
-                    </div>
+                    </a>
                        <!--<button type="button" class="btn btn-default btn-sm col-xs-offset-1">
                               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                               INICIAR SESIÓN
@@ -110,14 +101,15 @@
          <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3"> 
                 <div class="margin-bottom-20">
                   <ul class="nav nav-pills" role="tablist">
+                      <li role="presentation"><a href="paso3.html">Contacto</a></li>
                       <li role="presentation"><a href="paso1.html">Domicilio</a></li>
                       <li role="presentation" class="active"><a href="paso2.html">Pago</a></li>
-                      <li role="presentation"><a href="paso3.html">Contacto</a></li>
+                      
                   </ul>
                 </div>
 
 
-                <form action="paso3.html">
+                <form action="exito.html">
                     <div class="col-xs-12 col-md-12 margin-bottom-10"> 
                         <h5 class="col-xs-12">Nombre del titular</h5>
 
@@ -134,13 +126,22 @@
 
                         <div class="col-xs-12 input-group margin-bottom-20" >
                                 <span class="col-xs-1 margin-top-10 glyphicon glyphicon-credit-card"></span>
-                                <div class="col-xs-10" style="margin:0; padding:0">
-                                  <input id="domicilio" type="number" class="form-control" placeholder="Escribe tu número de tarjeta" min="1000000000000000" max="9999999999999999" required/>
+                                <div class="col-xs-2" style="margin:0; padding:0">
+                                  <input id="domicilio" type="number" class="form-control" placeholder="0000" min="0001" max="9999" required/>
+                                </div>
+                                <div class="col-xs-3 col-md-2" style="margin:0; padding:0">
+                                  <input id="domicilio" type="number" class="form-control" placeholder="0000" min="0001" max="9999" required/>
                                 </div>  
+                                <div class="col-xs-2" style="margin:0; padding:0">
+                                  <input id="domicilio" type="number" class="form-control" placeholder="0000" min="0001" max="9999" required/>
+                                </div>  
+                                <div class="col-xs-3 col-md-2" style="margin:0; padding:0">
+                                  <input id="domicilio" type="number" class="form-control" placeholder="0000" min="0001" max="9999" required/>
+                                </div>    
                         </div><!-- /input-group -->
                     </div>
 
-                    <div class="col-xs-6 margin-bottom-10"> 
+                    <div class="col-md-6 col-xs-12 margin-bottom-10"> 
                         <h5 class="col-xs-12">Fecha de caducidad</h5>
 
                         <div class="col-xs-12 input-group date margin-bottom-20 " id='datetimepicker1' >
@@ -153,12 +154,12 @@
                                 </div>    
                         </div><!-- /input-group -->
                     </div>
-                    <div class="col-xs-6 margin-bottom-10"> 
+                    <div class="col-md-6 col-xs-12 margin-bottom-10"> 
                         <h5 class="col-xs-12">CVC</h5>
 
                         <div class="col-xs-12 input-group margin-bottom-20" >
                                 <span class="col-xs-2 margin-top-10 glyphicon glyphicon-map-marker"></span>
-                                <div class="col-xs-10" style="margin:0; padding:0">
+                                <div class="col-xs-4" style="margin:0; padding:0">
                                   <input id="domicilio" type="number" size="3" class="form-control" placeholder="123"  min="1" max="999" required/>
                                 </div>  
                         </div><!-- /input-group -->
@@ -168,7 +169,7 @@
 
               <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
                     <a class="" href="paso3.html">
-                        <input class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" type="submit" value="Siguiente"/>
+                        <input class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" type="submit" value="Finalizar"/>
                       </a>
                       <a class="" href="paso1.html">
                         <button type="button" class="col-sm-4 pull-left col-xs-5 btn btn-lg btn-default margin-top-20 margin-bottom-20 grey">Anterior</button>

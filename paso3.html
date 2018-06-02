@@ -67,22 +67,13 @@
 
             <!-- botones -->
             <div class="btn-group pull-right" role="group" aria-label="...">
-                    <div class="dropdown col-xs-2 col-xs-offset-2">
-
-                          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            ES
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">CAT</a></li>
-                            <li><a href="#">EN</a></li>
-                          </ul>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-2">
-                     <button type="button" class="btn btn-default btn-sm col-xs-z">
-                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    
+                    <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
+                     <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
+                              <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"></span>
+                              <span class="badge simpleCart_quantity" style="background: "></span>
                         </button>
-                    </div>
+                    </a>
                        <!--<button type="button" class="btn btn-default btn-sm col-xs-offset-1">
                               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                               INICIAR SESIÓN
@@ -110,13 +101,14 @@
          <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3"> 
                 <div class="margin-bottom-20">
                   <ul class="nav nav-pills" role="tablist">
+                      <li role="presentation" class="active"><a href="paso3.html">Contacto</a></li>
                       <li role="presentation"><a href="paso1.html">Domicilio</a></li>
                       <li role="presentation"><a href="paso2.html">Pago</a></li>
-                      <li role="presentation" class="active"><a href="paso3.html">Contacto</a></li>
+                      
                   </ul>
                 </div>
 
-                <form action="exito.html">
+                <form action="paso1.html">
                     <div class="col-xs-12 col-md-12 margin-bottom-10"> 
                         <h5 class="col-xs-12">Correo electrónico</h5>
 
@@ -137,7 +129,7 @@
 
                 <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
                       <a class="" href="exito.html">
-                          <input type="submit" class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" value="Finalizar" />
+                          <input type="submit" class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" value="Siguiente" />
                         </a>
                         <a class="" href="paso2.html">
                           <button type="button" class="col-sm-4 pull-left col-xs-5 btn btn-lg btn-default margin-top-20 margin-bottom-20 grey">Anterior</button>

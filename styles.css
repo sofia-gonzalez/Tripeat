@@ -107,6 +107,13 @@ h1 {
     border: 1px solid #FF3300
      } 
 
+ .btn-default .badge{
+    display: inline;
+    color:#FF3300;
+    background: white;
+    border: 1px solid #FF3300
+     } 
+
 #navigation-tabs .active {
 	background: #FF3300;
 	color: white;
