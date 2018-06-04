@@ -35,6 +35,13 @@ h1 {
     left: 0;
     right: 0;
 }
+.header{
+        position: fixed;
+    top: 0px;
+    background: white;
+    z-index: 15;
+    width: 98%;
+}
 #header {
     color: white;
     background: #5a0001;
@@ -130,6 +137,8 @@ h1 {
 }
 
 #carrousell {
+        top: 25px;
+    position: relative;
     min-height: 600px;
 background-image: url(img/slide.jpg);
 background-position:center;
@@ -250,22 +259,36 @@ a p{color: black
 .carousel img {max-height: 300px;
                 }
 
-.carousel-caption {background: white;
+.carousel-caption{
+                    top:-1000px;}
+
+.carousel-inner img:hover, .carousel-caption:hover {
+                    background: #ff3300ba;
                     width:100%;
-                    color: black;
+                    color: white;
                     bottom:0px;
-                    left: 0px;
+                    top:0px;
+                    left: 15px;
                     right:0px;
                     text-shadow: none;
                 }
+.carousel-inner h4 {color: white}
+
 .carousel-control {max-width: 50px;
                     border-radius: 100%;
                     max-height: 50px;
                     line-height: 50px;
                     top: 50%;
                     transform: translateY(-50%);
+                    background: #ff3300;
+                     background-image: none;
+
                 }
-.carousel-control a {text-align: center;
+.carousel-control a, .left-carousel, .right-carousel {text-align: center;
+    background-color: white;
+    background-image: none;
+                }
+.carousel-control a:hover {text-align: center;
     background-color: white;
     background-image: none;
                 }
@@ -273,6 +296,7 @@ a p{color: black
 .carousel-control a span  {position: absolute;
     top: 10px;
     left: 20px;
+     background-image: none;
      }
 
 .nav-pills>li.active>a {background: #FF3300;}
