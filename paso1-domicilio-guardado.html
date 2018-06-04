@@ -22,15 +22,7 @@
     <!-- Select JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
-      <!-- date picker -->
-  <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-
-
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,7 +33,7 @@
 <body>
     <div class="container-fluid">
 
-      <div>
+                <div>
 
           <div id="navigation-links" class=" pull-left hidden-xs">
                 <ul>
@@ -101,42 +93,42 @@
          <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3"> 
                 <div class="margin-bottom-20">
                   <ul class="nav nav-pills" role="tablist">
-                      <li role="presentation" class="active"><a href="paso3.html">Contacto</a></li>
-                      <li role="presentation"><a href="paso1.html">Domicilio</a></li>
+                      <li role="presentation"><a href="paso3.html">Contacto</a></li>
+                      <li role="presentation" class="active"><a href="paso1.html">Domicilio</a></li>
                       <li role="presentation"><a href="paso2.html">Pago</a></li>
-                      
                   </ul>
                 </div>
 
-                <form action="paso1-domicilio-guardado.html">
-                    <div class="col-xs-12 col-md-12 margin-bottom-10"> 
-                        <h5 class="col-xs-12">Correo electrónico</h5>
+        <form action="paso2.html">
+                <div class="col-xs-12 col-md-12 margin-bottom-10"> 
+                    <h4 class="col-xs-12">Domicilio de envío</h4>
+                    
+                    <li class="list-group-item col-xs-12 margin-bottom-20 margin-top-20" >
+                      <a class="glyphicon glyphicon-pencil pull-right" href="paso1.html"></a>
+                      <p id="domicilio">No hay ningún domicilio guardado</p>
 
-                        <div class="col-xs-12 input-group margin-bottom-20" >
-                                <span class="col-xs-1 margin-top-10 glyphicon glyphicon-envelope"></span>
-                                <div class="col-xs-10" style="margin:0; padding:0">
-                                  <input type="email" class="form-control" placeholder="email@tripeat.com" required />
-                                </div>  
-                        </div><!-- /input-group -->
-
-                  
-
-                    <p class="col-xs-12">Te enviaremos a tu correo la confirmación y los datos de la compra realizada</p>
-                </div>
+                    </li>
+                    
+                
+                    
+                    </div><!-- /input-group -->
 
 
-                </div> <!--cierra div borde-->
+                <p class="col-xs-12 margin-top-20 margin-bottom-20">El tiempo estimado de entrega es de 30 a 45 minutos</p>
 
-                <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
-                      <a class="" href="exito.html">
-                          <input type="submit" class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" value="Siguiente" />
-                        </a>
-                        <a class="" href="paso2.html">
-                          <button type="button" class="col-sm-4 pull-left col-xs-5 btn btn-lg btn-default margin-top-20 margin-bottom-20 grey">Anterior</button>
-                        </a>
-                </div>
-        </form>  <!--row carrito-->
-      </div> <!--row carrito-->
+          </div> <!--cierra div borde-->
+
+          <div class="list-group-item col-xs-12 col-sm-6 col-sm-offset-3">
+                <a class="" href="paso2.html">
+                    <input class="col-sm-4 pull-right col-xs-5 btn btn-lg btn-primary margin-top-20 margin-bottom-20 grey" type="submit" value="Siguiente"/>
+                  </a>
+                  <a class="" href="cesta.html">
+                    <button type="button" class="col-sm-4 pull-left col-xs-5 btn btn-lg btn-default margin-top-20 margin-bottom-20 grey">Anterior</button>
+                  </a>
+          </div>
+
+        </form>  <!--cierra form-->
+
       </div> <!--row carrito-->
 
 
@@ -202,15 +194,25 @@
           $('#myModal').onclick('shown.bs.modal', function () {
           $('#myInput').focus()
         })
-
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-
       </script>   
 
       <!-- Java Script-->
     <script type="script.js"></script>
+     <script type="text/javascript">
+
+      $(document).ready(function () {
+          var domicilio =localStorage.getItem('domicilio');
+          $("#domicilio").html(domicilio);
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var params = new URLSearchParams(window.location.search);
+        $("#domicilio").attr('p', params.get('text'));
+      })
+    </script>
         
 </body>
 </html>

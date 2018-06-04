@@ -92,6 +92,13 @@ h1 {
 .logo img {
     max-width: 150px
 }
+@media only screen and (max-width: 780px) {
+
+    .logo img {max-width: 100px;}
+
+  }
+
+ 
 
 #navigation-tabs{
 	position: fixed;
