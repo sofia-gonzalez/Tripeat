@@ -159,12 +159,15 @@ h1 {
         top: 25px;
     position: relative;
     min-height: 600px;
-background-image: url(img/slide.jpg);
-background-position:center;
-background-repeat:no-repeat;  
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 text-align: center;
 width: 100%
 }
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder {background: white}
 
 
 #carrousell .buscar{
