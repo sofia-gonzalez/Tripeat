@@ -200,8 +200,9 @@ color: #5a0001;
 
 
 h2{text-align: center;
-	color: #FF3300
-    }
+	color: #FF3300;
+    font-family: 'Lato', sans-serif;
+    font-weight:thin;}
 
 .user {height: 50px;
     background: #ff8162;
@@ -321,8 +322,14 @@ a p{color: black
      background-image: none;
      }
 
-.nav-pills>li.active>a {background: #FF3300;}
-.nav-pills>li.active>a:hover {background: #5a0001;}
+.nav-pills>li.active>a {background: white;
+                        color: #FF3300;
+                    border-bottom: 3px solid #FF3300;
+                    text-align: justify}
+
+.nav-pills>li.active>a:hover {border-bottom: 3px solid #FF3300;
+                            background: white;
+                            color: #FF3300}
 
 .btn-primary {background: #FF3300;
 border: none;
