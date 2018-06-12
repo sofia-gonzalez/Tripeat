@@ -169,6 +169,13 @@ width: 100%
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder {background: white}
 
+.login .glyphicon { color:#FF3300;
+                    padding-right: 20px  }
+
+.login h5 {font-weight: bold;
+            padding-left: 35px
+
+                   }
 
 #carrousell .buscar{
     margin-top: 10px; 
