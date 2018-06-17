@@ -39,7 +39,6 @@ h1 {
         position: fixed;
     top: 0px;
     background: white;
-    opacity: 0.8;
     z-index: 15;
     width: 98%;
 }
@@ -98,7 +97,6 @@ h1 {
     .logo img {max-width: 100px;}
 
   }
-.logo {margin-top: 25px}
 
  
 
@@ -158,20 +156,16 @@ h1 {
 }
 
 #carrousell {
-        top: 0;
+        top: 25px;
     position: relative;
     min-height: 600px;
-
-    background-image: url(img/01.gif);
+    background-image: url(img/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 text-align: center;
 width: 100%
 }
-
-
-
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder {background: white}
 
