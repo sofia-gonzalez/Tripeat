@@ -66,6 +66,10 @@ h1 {
     color: white
 }
 
+.lnr{color: #F76B25}
+
+.exito{font-size: 5em}
+
 #navigation-links {
     background: white;
 }
@@ -80,18 +84,20 @@ h1 {
 
 #navigation-links a {
     text-decoration: none;
-    color: #FF3300;
+    color: #F76B25;
     padding: 5px;
 }
 
 #navigation-links a.active {
-    background: #FF3300;
+    background: #F76B25;
     color: white
 }
 
 .logo img {
     max-width: 150px
 }
+.left{text-align: left;}
+
 @media only screen and (max-width: 780px) {
 
     .logo img {max-width: 100px;}
@@ -105,18 +111,18 @@ h1 {
 	bottom: 0px; 
 	background: white;
 	height:50px; 
-	border-top: 1px solid #FF3300;
+	border-top: 1px solid #F76B25;
     padding-bottom: 30px
 }
 
 #navigation-tabs a {
 	text-decoration: none;
 	padding: 10px;
-	color: #FF3300;
+	color: #F76B25;
 	width: 100%
      }
 #navigation-tabs a:hover {
-	background: #FF3300;
+	background: #F76B25;
 	color: white;
 	height:50px;
 	border-radius: 0px
@@ -128,20 +134,20 @@ h1 {
      } 
 .badge {
     display: inline;
-    color:#FF3300;
+    color:#F76B25;
     background: white;
-    border: 1px solid #FF3300
+    border: 1px solid #F76B25
      } 
 
  .btn-default .badge{
     display: inline;
-    color:#FF3300;
+    color:#F76B25;
     background: white;
-    border: 1px solid #FF3300
+    border: 1px solid #F76B25
      } 
 
 #navigation-tabs .active {
-	background: #FF3300;
+	background: #F76B25;
 	color: white;
 	height:50px;
 	border-radius: 0px
@@ -169,7 +175,7 @@ width: 100%
 <<<<<<< HEAD
 .bootstrap-select>.dropdown-toggle.bs-placeholder {background: white}
 
-.login .glyphicon { color:#FF3300;
+.login .glyphicon { color:#F76B25;
                     padding-right: 20px  }
 
 .login h5 {font-weight: bold;
@@ -210,7 +216,7 @@ color: #5a0001;
 
 
 h2{text-align: center;
-	color: #FF3300;
+	color: #F76B25;
     font-family: 'Lato', sans-serif;
     font-weight:thin;}
 
@@ -221,7 +227,7 @@ h2{text-align: center;
 	  }
 
 footer {
-    background: #FF3300;
+    background: #F76B25;
     color: white;
     padding: 20px;
     margin-top: 60px;
@@ -250,7 +256,7 @@ a:hover, a:active {
 footer a{color: white
 	}
 
-.backgrey{background: #FF3300;
+.backgrey{background: #F76B25;
 }
 
 
@@ -286,7 +292,7 @@ h4{color: #5a0001}
 a p{color: black
 }
 
-.grey {background: #FF3300;
+.grey {background: #F76B25;
 	color: white}
 
 .carousel img {max-height: 300px;
@@ -296,7 +302,7 @@ a p{color: black
                     top:-1000px;}
 
 .carousel-inner img:hover, .carousel-caption:hover {
-                    background: #ff3300ba;
+                    background: #F76B25ba;
                     width:100%;
                     color: white;
                     bottom:0px;
@@ -313,7 +319,7 @@ a p{color: black
                     line-height: 50px;
                     top: 50%;
                     transform: translateY(-50%);
-                    background: #ff3300;
+                    background: #F76B25;
                      background-image: none;
 
                 }
@@ -333,15 +339,15 @@ a p{color: black
      }
 
 .nav-pills>li.active>a {background: white;
-                        color: #FF3300;
-                    border-bottom: 3px solid #FF3300;
+                        color: #F76B25;
+                    border-bottom: 3px solid #F76B25;
                     text-align: justify}
 
-.nav-pills>li.active>a:hover {border-bottom: 3px solid #FF3300;
+.nav-pills>li.active>a:hover {border-bottom: 3px solid #F76B25;
                             background: white;
-                            color: #FF3300}
+                            color: #F76B25}
 
-.btn-primary {background: #FF3300;
+.btn-primary {background: #F76B25;
 border: none;
 text-shadow: none}
 
@@ -396,17 +402,17 @@ text-shadow: none}
 
 .btn-group button, .btn-default{
 	text-shadow: none;
-	border-color: #FF3300;
+	border-color: #F76B25;
 	background: none;
-	color:  #FF3300
+	color:  #F76B25
 }
 
-.btn-default:hover {color:  #FF3300;
+.btn-default:hover {color:  #F76B25;
 	background:#ffc5b7;
-	border-color: #FF3300;
+	border-color: #F76B25;
 }
 
-.form-control{border-color: #FF3300;}
+.form-control{border-color: #F76B25;}
 .form-control:focus {border-color:#5a0001;}
 
 .input-group .form-control {z-index:0;}
@@ -445,7 +451,7 @@ text-shadow: none}
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 }
-.item-quantity{border:1px solid #FF3300;
+.item-quantity{border:1px solid #F76B25;
                 text-align: center;
                 width: 50px
                 }
