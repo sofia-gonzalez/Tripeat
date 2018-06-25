@@ -39,9 +39,37 @@
 
         <div class="header">
 
+          <div class="logo pull-left">
+
+                      <a href="index.html">
+                      <img src="img/logo-tripeat.jpg" class="center">
+                      </a>
+            </div>
+
+          <div id="navigation-links" class=" pull-right hidden-xs">
+                <ul>
+                    <li>
+                        <a  href="index.html" class="active">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html" >
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cesta.html">
+                            Cesta <span class="badge simpleCart_quantity"></span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
 
             <!-- botones -->
-            <div class="btn-group pull-right" role="group" aria-label="...">
+            <div class="btn-group pull-right hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
                     
                     <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
                      <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
@@ -56,25 +84,6 @@
                     
             </div> <!-- cierra botones -->
 
-            <div id="navigation-links" class="col-sm-6 hidden-xs">
-                <ul>
-                    <li>
-                        <a href="index.html" class="active">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="product.html">
-                            Productos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cesta.html">
-                            Cesta <span class="badge simpleCart_quantity"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div><!-- cierra header -->
 
 
@@ -84,20 +93,17 @@
 
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 buscar">
-                    <div class="row logo">
-                        <img src="img/logo-tripeat.jpg">
-                    </div>
-                    <div class="row value">
+                    
+                    <h3 class="row value">
 
-                        Encuentra aquí ingredientes importados o sus
-                        reemplazos y te los enviamos a tu casa para que saborees o cocines recetas de tu país o del lugar que más te apetezca!
-                    </div>
+                        Llevamos a tu casa <strong>productos importados o sus reemplazos</strong> en Barcelona
+                    </h3>
 
 
                     <div class="row filtros">
                         <div class="col-xs-12">
-                                <div id="dropdown" class="margin-top-20">
-                                    <select class="selectpicker" data-live-search="true" title="Busca país o región">
+                                <div id="dropdown" class="margin-top-20 col-xs-12">
+                                    <select class="selectpicker col-xs-12" data-live-search="true" title="Busca país o región">
                                   
                                         <optgroup label="A">
                                             <option><a href="#">Albania</a></option>
@@ -259,12 +265,13 @@
                     </div><!--ROW FILTROS -->
 
 
-                    <div class="row input-group">
+                    <div class="row input-group col-xs-12 col-sm-10 col-sm-offset-1">
                       <input type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
-                      <span class="input-group-btn">
-                        <a href="productos-encontrados.html"><button class="btn btn-primary" type="button">Buscar</button></a>
-                      </span>
+                      
                     </div><!-- /input-group -->
+                    <span class="col-xs-12">
+                        <a href="productos-encontrados.html"><button class="btn btn-primary col-xs-12 col-sm-10 col-sm-offset-1" type="button">Buscar</button></a>
+                      </span>
 
                       
 

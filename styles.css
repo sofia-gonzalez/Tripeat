@@ -89,12 +89,12 @@ h1 {
 }
 
 #navigation-links a.active {
-    background: #F76B25;
-    color: white
+    border-bottom: 3px solid #F76B25;
+    color: #F76B25
 }
 
 .logo img {
-    max-width: 150px
+    max-width: 120px
 }
 .left{text-align: left;}
 
@@ -380,6 +380,35 @@ text-shadow: none}
             display:inline-block;
             margin-left: 20px;
             }
+.bandera {max-width: 20px;
+            padding-right: 5px;
+            padding-bottom: 3px}
+
+.listado-buscar{margin-top: 50px}
+
+.listado h3 {font-size: 16px;
+            font-weight: bold;
+            margin-top: 0px;
+            padding-top: 0px;
+            padding-left: 0px
+            }
+
+.listado h4 {font-size: 14px;
+            margin-top: 5px;
+            padding-left: 0px
+            }
+.align-right{text-align: right;
+            padding-right:0px;}
+
+.margin-0{margin: 0px}
+.margin-top-0{margin-top: 0px}
+.margin-left-0{margin-left: 0px}
+.padding-0{padding: 0px}
+
+.thumbnail {padding: 0px;
+            border-radius: 0px}
+.detalle:hover .thumbnail{box-shadow: 0 3px 3px rgba(0,0,0,.075)}
+.thumbnail .caption {margin-bottom: 0px}
 
 @media only screen and (max-width: 780px) {
 
@@ -390,7 +419,8 @@ text-shadow: none}
 }
 
 .product img {
-	max-height: 165px;
+	height: auto;
+    width: 100%
 }
 .added{
    content: "Añadir"; 
