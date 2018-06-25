@@ -37,9 +37,16 @@
 <body>
     <div class="container-fluid">
 
-        <div>
+        <div class="header">
 
-          <div id="navigation-links" class=" pull-left hidden-xs">
+          <div class="logo pull-left">
+
+                      <a href="index.html">
+                      <img src="img/logo-tripeat.jpg" class="center">
+                      </a>
+            </div>
+
+          <div id="navigation-links" class=" pull-right hidden-xs">
                 <ul>
                     <li>
                         <a  href="index.html">
@@ -53,14 +60,16 @@
                     </li>
                     <li>
                         <a href="cesta.html">
-                            Cesta  <span class="badge simpleCart_quantity"></span>
+                            Cesta <span class="badge simpleCart_quantity"></span>
                         </a>
                     </li>
                 </ul>
+
+
             </div>
 
             <!-- botones -->
-            <div class="btn-group pull-right" role="group" aria-label="...">
+            <div class="btn-group pull-right hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
                     
                     <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
                      <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
@@ -75,19 +84,10 @@
                     
             </div> <!-- cierra botones -->
 
-            <div class="col-md-offset-2 center logo">
-
-                      <a href="index.html">
-                      <img src="img/logo-tripeat.jpg" class="center">
-                      </a>
-            </div>
-
-            
-
-        </div><!-- cierra menu -->
+        </div><!-- cierra header -->
 
 
-                    <div class="row input-group margin-top-20 margin-bottom-20 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+                    <div class="listado-buscar row input-group margin-top-20 margin-bottom-20 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
                       <input type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
                       <span class="input-group-btn">
                         <a href="product-detail-notfound.html"><button class="btn btn-primary" type="button">Buscar</button>
@@ -95,94 +95,117 @@
                       </span>
                     </div><!-- /input-group -->
 
-<div class="row product-detail simpleCart_shelfItem">
-    <div class="productimage">
+<div class="row product-detail simpleCart_shelfItem listado-buscar">
+    <div class="productimage col-xs-12">
 
         <img id="product-image" src="http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif" alt="...">
 
     </div>
     <div class="productimage margin-bottom-40">
 
-                    <h3 id="product-name" class="item_name">Don Satur Biscochos</h3>
-                    <h4>País de origen</h4>
+                    <h3 id="product-name" class="item_name">Alfajores Havanna Chocolate</h3>
+                    <h4 class=""><img src="img/banderas/argentina.png" alt="..." class="bandera"> Argentina</h4>
                     <p class="item_price">10 €</p>
+                    <p>Caja de 12 alfajores rellenos con dulce de leche cubiertos con chocolate blanco y con cobertura de chocolate semiamargo.</p>
                     <p>
                         <a  href="javascript:;">
                          <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
-                        </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver sustituto local</a></p>
-                  </div>
+                        </a> </p>
+
+                       
+       </div>
 
       
     </div>
 
 
-
-<div class="row product "> <!-- GALERIA -->
-    <h3 class="col-xs-12">Te recomendamos acompañarlo con:</h3>
-      <a href="product-detail.html">
+<h3 class="col-xs-12">Recomendados para ti:</h3>
+<div class="row product listado-buscar listado"> <!-- GALERIA -->
+    
+      <a href="product-detail.html?img=img/10.alfajor.jpg">
           <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
-                  <div class=""><img src="https://www.mate-tee.de/images/product_images/popup_images/1855_0.jpg" alt="..."></div>
+                  <div class=""><img src="img/10.alfajor.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3 class="item_name">Dulce de leche Chimbote</h3>
-                    <h4>España</h4>
-                    <p class="item_price">2 €</p>
-                    <p>
-                        <a  href="javascript:;">
-                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
-                        </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
+                    <h3 class="item_name col-xs-9">Alfajores Havanna Maizena</h3>
+                    <p class="item_price col-xs-3 align-right">4.5 €</p>
+
+                    <div class="col-xs-12 margin-top-0 padding-0">
+                    <h4 class="col-xs-8"><img src="img/banderas/argentina.png" alt="..." class="bandera"> Argentina</h4>
+                          <a 
+                          href="javascript:;">
+                           <input type="button" id="btnAdded" value="Añadir" href="javascript:;" class="item_add btn btn-default btn-sm backgrey added pull-right" />
+                          </a>
+                    
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+          </div>
+      </a>   
+      <a href="product-detail.html?img=img/02.mate.jpg">
+          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
+            
+                <div class="thumbnail">
+                  <div class=""><img src="img/02.mate.jpg" alt="..."></div>
+                  <div class="caption">
+                    <h3 class="item_name col-xs-9">Yerba Mate La Merced</h3>
+                    <p class="item_price col-xs-3 align-right">4.5 €</p>
+
+                    <div class="col-xs-12 margin-top-0 padding-0">
+                    <h4 class="col-xs-8"><img src="img/banderas/argentina.png" alt="..." class="bandera"> Argentina</h4>
+                          <a 
+                          href="javascript:;">
+                           <input type="button" id="btnAdded" value="Añadir" href="javascript:;" class="item_add btn btn-default btn-sm backgrey added pull-right" />
+                          </a>
+                    
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
                 </div>
           </div>
       </a>        
-      <a href="product-detail.html">
+      <a class="detalle" href="product-detail.html?img=img/03.empanadas.jpg">
           <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
-                  <div class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgOMtTzEo03sZU3IyBy9dfdCUzcjRLF2XlTpLyshWSfJC0MTDhJg" alt="..."></div>
+                  <div class="image"><img src="img/03.empanadas.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3 class="item_name">Alfajores Habanna</h3>
-                    <h4>Argentina</h4>
-                    <p class="item_price">10 €</p>
-                    <p>
-                        <a  href="javascript:;">
-                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
-                        </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
+                    <h3 class="item_name col-xs-9">Masa empanadas La Salteña</h3>
+                    <p class="item_price col-xs-3 align-right">2.5 €</p>
+
+                    <div class="col-xs-12 margin-top-0 padding-0">
+                    <h4 class="col-xs-8"><img src="img/banderas/argentina.png" alt="..." class="bandera"> Argentina</h4>
+                          <a 
+                          href="javascript:;">
+                           <input type="button" id="btnAdded" value="Añadir" href="javascript:;" class="item_add btn btn-default btn-sm backgrey added pull-right" />
+                          </a>
+                    
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
                 </div>
           </div>
       </a>
-      <a href="product-detail.html">
+      <a href="product-detail.html?img=img/04.dulce.jpg">
           <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
             
                 <div class="thumbnail">
-                  <div class=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSummifBo4zaPtj7UWsu9lppAwsyZq6CjTO7-zXF1OAxtAyFGUI" alt="..."></div>
+                  <div class=""><img src="img/04.dulce.jpg" alt="..."></div>
                   <div class="caption">
-                    <h3 class="item_name">Yerba mate Rosamonte</h3>
-                    <h4>Argentina</h4>
-                    <p class="item_price">5 €</p>
-                    <p>
-                        <a  href="javascript:;">
-                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
-                        </a><a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
-                  </div>
-                </div>
-          </div>
-      </a>
-      <a href="product-detail.html">
-          <div class="col-sm-6 col-md-3 simpleCart_shelfItem">
-            
-                <div class="thumbnail">
-                  <div class=""><img src="http://www.pampadrugstore.net/350-large_default/tapas-de-empanadas-la-saltena-horno.jpg" alt="..."></div>
-                  <div class="caption">
-                    <h3 class="item_name">Tapa empanada La Salteña</h3>
-                    <h4>Argentina</h4>
-                    <p class="item_price">3.5 €</p>
-                    <p>
-                        <a  href="javascript:;">
-                         <input type="button" id="btnAdded" value="Añadir a la cesta" href="javascript:;" class="item_add btn btn-primary backgrey added" />
-                        </a> <a href="product-detail.html" class="btn btn-default" role="button">Ver detalle</a></p>
+                    <h3 class="item_name col-xs-9">Dulce de leche vacalín</h3>
+                    <p class="item_price col-xs-3 align-right">2.5 €</p>
+
+                    <div class="col-xs-12 margin-top-0 padding-0">
+                    <h4 class="col-xs-8"><img src="img/banderas/argentina.png" alt="..." class="bandera"> Argentina</h4>
+                          <a 
+                          href="javascript:;">
+                           <input type="button" id="btnAdded" value="Añadir" href="javascript:;" class="item_add btn btn-default btn-sm backgrey added pull-right" />
+                          </a>
+                    
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
                 </div>
           </div>

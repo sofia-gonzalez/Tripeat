@@ -37,9 +37,16 @@
 <body>
     <div class="container-fluid">
 
-        <div>
+        <div class="header">
 
-          <div id="navigation-links" class=" pull-left hidden-xs">
+          <div class="logo pull-left">
+
+                      <a href="index.html">
+                      <img src="img/logo-tripeat.jpg" class="center">
+                      </a>
+            </div>
+
+          <div id="navigation-links" class=" pull-right hidden-xs">
                 <ul>
                     <li>
                         <a  href="index.html">
@@ -62,7 +69,7 @@
             </div>
 
             <!-- botones -->
-            <div class="btn-group pull-right" role="group" aria-label="...">
+            <div class="btn-group pull-right hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
                     
                     <a class="col-xs-2 col-xs-offset-2" href="cesta.html">
                      <button type="button" class="btn btn-default btn-sm col-xs-z cesta-icon">
@@ -77,19 +84,10 @@
                     
             </div> <!-- cierra botones -->
 
-            <div class="col-md-offset-2 center logo">
-
-                      <a href="index.html">
-                      <img src="img/logo-tripeat.jpg" class="center">
-                      </a>
-            </div>
-
-            
-
-        </div><!-- cierra menu -->
+        </div><!-- cierra header -->
 
 
-                    <div class="row input-group margin-top-20 margin-bottom-20 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+                    <div class="listado-buscar row input-group margin-top-20 margin-bottom-20 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
                       <input type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
                       <span class="input-group-btn">
                         <button class="btn btn-primary" type="button">Buscar</button>
