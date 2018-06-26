@@ -141,6 +141,8 @@ h1 {
     border: 1px solid #F76B25
      } 
 
+.boton-cesta{border: none}
+
  .btn-default .badge{
     display: inline;
     color:#F76B25;
