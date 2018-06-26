@@ -112,7 +112,9 @@ h1 {
 	background: white;
 	height:50px; 
 	border-top: 1px solid #F76B25;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    margin-left: -15px;
+    width: 100%
 }
 
 #navigation-tabs a {
@@ -152,14 +154,16 @@ h1 {
 	height:50px;
 	border-radius: 0px
      }
-#navigation-tabs li {
-    display: inline;
-}
+
+
 
 .menu-icon {
    text-align: center;
    margin:0 auto;
+   padding-right: : 0px;
+    padding-left:0px;
 }
+
 
 #carrousell {
         top: 25px;
