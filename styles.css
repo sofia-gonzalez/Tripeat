@@ -426,6 +426,11 @@ text-shadow: none}
 	height: auto;
     width: 100%
 }
+.imgblanca{max-height: 206px;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;}
+
 .added{
    content: "Añadir"; 
 }
