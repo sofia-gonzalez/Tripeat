@@ -389,7 +389,8 @@ text-shadow: none}
 
 .btn-primary:hover {background: #5a0001}
 
-.action-button {position: fixed;
+.action-button {position: -webkit-sticky;
+                position: sticky;
 				bottom: 0px;
 				background: white;
 				z-index: 1;
