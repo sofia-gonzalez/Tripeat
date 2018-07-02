@@ -188,6 +188,14 @@ text-align: center;
 width: 100%*/
 }
 
+@media only screen and (max-width: 780px) {
+
+   #carrousell {background-image: url(img/slide-mobile.jpg);
+    background-size: auto;
+
+            }
+  }
+
 <<<<<<< HEAD
 .bootstrap-select>.dropdown-toggle.bs-placeholder {background: white}
 
@@ -195,7 +203,8 @@ width: 100%*/
                     padding-right: 20px  }
 
 .login h5 {font-weight: bold;
-            padding-left: 35px
+            padding-left: 35px;
+            padding-bottom: -40px;
 
                    }
 
@@ -280,6 +289,16 @@ footer a{color: white
 .margin-top-40 {
 	margin-top: 40px
 }
+
+@media only screen and (max-width: 780px) {
+
+    .margin-top-40 {
+    margin-top: 20px
+    }
+
+}
+
+
 
 .margin-bottom-40 {
 	margin-bottom: 40px
