@@ -264,7 +264,7 @@
                         </div>
 
                             <div class="row margin-bottom-20 margin-top-20 col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-                                <input type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
+                                <input id="myInput" type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
                           
                             </div><!-- /input-search -->
                     </div><!--ROW FILTROS -->
@@ -272,7 +272,7 @@
 
                     
                     <span class="col-xs-12">
-                        <a href="productos-encontrados.html"><button class="btn btn-primary col-xs-12 col-sm-10 col-sm-offset-1" type="button">Buscar</button></a>
+                        <a href="productos-encontrados.html"><button id="myBtn" class="btn btn-primary col-xs-12 col-sm-10 col-sm-offset-1" type="button">Buscar</button></a>
                       </span>
 
                       
@@ -890,7 +890,17 @@
         $(this).val("Añadido");
       });
     });
-   </script>   
+   </script>  
+
+   <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("myBtn").click();
+        }
+    });
+    </script> 
                    
         
 </body>
