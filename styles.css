@@ -265,11 +265,19 @@ footer h4 {color: white}
 
 ul li {list-style: none }
 
+@media only screen and (max-width: 780px) {
+
+    footer ul {
+    padding-left:0; 
+    }
+    footer {margin-bottom: 50px}
+
+}
+
 
 footer a:link, a:visited {
 
     padding: 14px 25px;
-    text-align: center; 
     text-decoration: none;
     display: inline-block;
 }
