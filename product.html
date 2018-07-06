@@ -76,9 +76,9 @@
         </div><!-- cierra header -->
 
                   <div class="listado-buscar row input-group margin-top-20 margin-bottom-20 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
-                      <input type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
+                      <input id="myInput" type="text" class="form-control" placeholder="Buscar productos e ingredientes...">
                       <span class="input-group-btn">
-                        <a href="product-detail-notfound.html"><button class="btn btn-primary" type="button">Buscar</button>
+                        <a href="product-detail-notfound.html"><button  id="myBtn" class="btn btn-primary" type="button">Buscar</button>
                           </a>
                       </span>
                   </div><!-- /input-group -->
@@ -598,6 +598,16 @@
         $(this).val("Añadido");
       });
     });
-   </script>     
+   </script> 
+
+   <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("myBtn").click();
+        }
+    });
+    </script>     
 </body>
 </html>
