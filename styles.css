@@ -573,7 +573,7 @@ text-shadow: none}
 
             }
 
-.item-name {font-size: 20px;
+.item-name {font-size: 18px;
             margin-top: 20px;
             margin-bottom: 10px;
             font-weight: 500;
@@ -594,11 +594,12 @@ text-shadow: none}
 
 .simpleCart_items td{ min-width: 20px;
                     height: 60px;
-                    padding: 20px
+                    padding: 20px 10px
 }
 
 .item-total {
             font-weight: 600;
+            font-size: 13px
 }
 
 .item-remove{
